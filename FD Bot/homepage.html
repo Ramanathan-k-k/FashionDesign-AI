@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fashion Design Bot, your personal AI styling studio.">
+    <title>Fashion Design Bot | Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body class="studio-body">
+    <div class="chat-app">
+        <aside class="chat-sidebar">
+            <a class="brand" href="IntroIg.html"><span class="brand-mark">FD</span><span>Fashion Design <em>Bot</em></span></a>
+            <button class="new-chat" id="newChat" type="button"><span>＋</span> New design chat</button>
+            <div class="sidebar-label">Your workspace</div>
+            <nav class="chat-nav" aria-label="Workspace navigation"><a class="selected" href="homepage.html"><span>✦</span> Design studio</a><a href="#saved"><span>♡</span> Saved looks <b>04</b></a><a href="#notes"><span>▱</span> Style notes</a></nav>
+            <div class="recent-chats"><div class="sidebar-label">Recent conversations</div><button type="button">Summer wedding guest</button><button type="button">Capsule wardrobe</button><button type="button">First date, not too much</button></div>
+            <div class="sidebar-footer"><a href="loginpage.html"><span class="avatar">JD</span><span><strong>Jamie Doe</strong><small>Free workspace</small></span><span class="logout">↪</span></a></div>
+        </aside>
+        <main class="chat-main">
+            <header class="chat-topbar"><div><span class="mobile-brand">FD</span><span class="topbar-title">New design chat</span><span class="beta-tag">BETA</span></div><div class="topbar-actions"><button type="button" class="top-icon" aria-label="Theme">◐</button><a href="IntroIg.html">Exit studio</a></div></header>
+            <section class="conversation" id="conversation" aria-live="polite">
+                <div class="welcome-block"><p class="eyebrow">Personal styling, thoughtfully made</p><h1>What are we<br><i>dreaming up?</i></h1><p>Choose a starting point below, or tell me what you have in mind. I’ll help shape the whole look.</p></div>
+                <div class="prompt-grid" aria-label="Fashion prompts"><button class="prompt-card" type="button" data-occasion="Everyday" data-dress="Smart casual"><span class="prompt-icon">◌</span><strong>Everyday, elevated</strong><small>Smart casual</small><span class="prompt-arrow">→</span></button><button class="prompt-card" type="button" data-occasion="Wedding guest" data-dress="Soft tailoring"><span class="prompt-icon">✧</span><strong>A special occasion</strong><small>Wedding guest</small><span class="prompt-arrow">→</span></button><button class="prompt-card" type="button" data-occasion="Work" data-dress="Modern tailoring"><span class="prompt-icon">□</span><strong>Work, but make it me</strong><small>Modern tailoring</small><span class="prompt-arrow">→</span></button><button class="prompt-card" type="button" data-occasion="Night out" data-dress="Statement dress"><span class="prompt-icon">✦</span><strong>A night to remember</strong><small>Statement dress</small><span class="prompt-arrow">→</span></button></div>
+                <div class="chat-messages" id="chatMessages"></div>
+            </section>
+            <section class="composer-wrap" aria-label="Create a fashion request"><div class="selection-row"><label>Occasion<select id="occasion"><option value="Everyday">Everyday</option><option value="Work">Work</option><option value="Wedding guest">Wedding guest</option><option value="Night out">Night out</option><option value="Travel">Travel</option></select></label><label>Dress type<select id="dressType"><option value="Smart casual">Smart casual</option><option value="Modern tailoring">Modern tailoring</option><option value="Soft tailoring">Soft tailoring</option><option value="Statement dress">Statement dress</option><option value="Layered separates">Layered separates</option></select></label></div><form class="composer" id="chatForm"><textarea id="chatInput" rows="1" placeholder="Tell me what you want to wear..." aria-label="Fashion design request"></textarea><button type="submit" aria-label="Send fashion request">↑</button></form><div class="composer-hint"><span>Fashion Design Bot can make mistakes. Check important details.</span><span>Press Enter to send</span></div></section>
+        </main>
+    </div>
+<script src="script.js"></script>
+
+
+</body>
+</html>
